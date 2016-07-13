@@ -1,6 +1,8 @@
 # Kafka in Docker
 
-This repository provides everything you need to run Kafka 0.10.0.0 in Docker. Based on [spotify/docker-kafka](https://github.com/spotify/docker-kafka).
+This repository provides everything you need to run Kafka 0.10.0.0 in Docker.
+
+Based on [spotify/docker-kafka](https://github.com/spotify/docker-kafka) with some additions from other branches.
 
 ## Why?
 
@@ -17,7 +19,7 @@ in the same container. This means:
 * `ADVERTISED_PORT`: port for `advertised.listeners`
 * `ADVERTISED_PROTO`: protocol to advertise. Defaults to `PLAINTEXT`
 * `ZK_CHROOT`: Zookeeper chroot. Defaults to `/`
-* Any variable prefixed with KAFKA will be transformed to name of parameter for example `KAFKA_AUTO_CREATE_TOPICS_ENABLE=false` will set `auto.create.topic` to false
+* Any variable prefixed with `KAFKA_` will be transformed to a config parameter name: e.g. `KAFKA_AUTO_CREATE_TOPICS_ENABLE=false` will set `auto.create.topic` to `false`
 
 ## Run
 
@@ -45,5 +47,4 @@ https://registry.hub.docker.com/u/orbat/kafka/
 
 ## Todo
 
-* Not particularily optimized for startup time.
-* Better docs
+* Not particularily optimized for startup time
