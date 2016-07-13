@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Based on https://github.com/spotify/docker-kafka, modified by https://github.com/ORBAT
+
 # Optional ENV variables:
 # * ADVERTISED_HOST: the external ip for the container, e.g. `docker-machine ip \`docker-machine active\``
 # * ADVERTISED_PORT: the external port for Kafka, e.g. 9092

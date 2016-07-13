@@ -1,5 +1,7 @@
 # Kafka and Zookeeper
 
+# Based on https://github.com/spotify/docker-kafka, modified by https://github.com/ORBAT
+
 FROM java:openjdk-8-jre
 
 ENV DEBIAN_FRONTEND noninteractive
